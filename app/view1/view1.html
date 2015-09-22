@@ -1,0 +1,13 @@
+<h1>Literal</h1>
+<table>
+    <tr ng-repeat="x in names">
+        <td>{{ x}}</td>
+    </tr>
+</table>
+
+<h1>Converted</h1>
+<table>
+    <tr ng-repeat="x in names">
+        <td ng-bind-html="convertToTrustedHtml(x)"></td>
+    </tr>
+</table>
